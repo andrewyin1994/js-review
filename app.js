@@ -1,3 +1,3 @@
-let myTeam = "Mantong / Andrew";
+let myTeam = 'Mantong / Andrew';
 
 console.log(myTeam);
