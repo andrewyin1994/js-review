@@ -8,20 +8,22 @@ function getYearOfBirth(age) {
 }
 
 function createGreeting(name,age) {
-  console.log (name && age);
-  if (name && age === undefined){
+  if ((name || age) === undefined) {
     throw new Error('Arguments not valid.');
   }
+
+  if (typeof(name) !== 'string' || typeof(age) !== 'number') {
+    throw new TypeError('Invalid Type');
+  }
+
   const yearOfBirth = getYearOfBirth(age);
 
   return `Hi, my name is ${name} and I'm ${age} years old. I was born in ${yearOfBirth}.`;
 }
 
 try {
-  const greeting = createGreeting();
+  const greeting = createGreeting('chris', '29');
   console.log(greeting);
 } catch(error) {
   console.error(error);
 }
-
-
