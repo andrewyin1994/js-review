@@ -85,12 +85,41 @@ function days(month, leapYear) {
     days = 30;
     break;
   default:
-    return 'Must provide valid month.'
+    return 'Must provide valid month.';
   }
 
-  return `${mon} has ${days} days.`
+  return `${mon} has ${days} days.`;
 }
 
 console.log(days('February', true));
 console.log(days('February', false));
 console.log(days('djsfjdslfs'));
+
+
+function compare (choice1){
+  const choice2 = Math.floor(Math.random() * 3) +1;
+  if (choice1 < 1 || choice1 >3)
+    throw new Error ('invalid');
+  if (choice1 ===choice2) { 
+    return 'the result is a tie';
+    
+  }
+  if (choice1===1){
+    if (choice2===3){
+      return 'win';} 
+    else return 'lose';
+  }
+  if (choice1===3){
+    if (choice2===2){
+      return 'win';} 
+    else return 'lose';
+  }
+  if (choice1===2){
+    if (choice2===1){
+      return 'win';} 
+    else return 'lose';
+  }
+    
+}
+console.log (compare(9));
+
