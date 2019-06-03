@@ -1,4 +1,4 @@
-Hello my is Mantong
+Hello my name is Mantong
 
 Hello my name is Andrew
 
