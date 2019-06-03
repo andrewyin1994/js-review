@@ -1,10 +1,10 @@
 /* eslint-disable no-console */
 /* eslint-disable strict */
 
-function createGreeting(){
-  return 'Hi, my name is Chris and I\'m 29 years old.';
+function createGreeting(name,age){
+  return `Hi, my name is ${name} and I'm ${age} years old.`;
 }
 
-const greeting = createGreeting();
+const greeting = createGreeting('Chris', 29);
 
 console.log(greeting);
