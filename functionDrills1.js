@@ -8,8 +8,8 @@ function getYearOfBirth(age) {
 }
 
 function createGreeting(name,age) {
-  console.log (name && age);
-  if (name && age === undefined){
+  
+  if (name || age === undefined){
     throw new Error('Arguments not valid.');
   }
   const yearOfBirth = getYearOfBirth(age);
