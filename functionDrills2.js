@@ -21,7 +21,6 @@ beyond(0);
 
 let sentence='craft block argon meter bells brown croon droop';
 
-
 function decode(encodedword){
   if (encodedword[0]==='a') console.log(encodedword[1]);
   else if (encodedword[0]==='b') console.log(encodedword[2]);
@@ -31,5 +30,67 @@ function decode(encodedword){
 }
 let words=sentence.split(' ');
 console.log (words);
-for (let i=0; i<words.length; i++)
+for (let i=0; i<words.length; i++) {
   decode (words[i]);
+}
+
+
+function days(month, leapYear) {
+  let mon;
+  let days;
+  switch(month) {
+  case 'January':
+    mon = 'January';
+    days = 31;
+    break;
+  case 'February':
+    mon = 'February';
+    if(leapYear) days = 29;
+    else days = 28;
+    break;
+  case 'March':
+    mon = 'March';
+    days = 31;
+    break;
+  case 'April':
+    mon = 'April';
+    days = 30;
+    break;
+  case 'May':
+    mon = 'May';
+    days = 31;
+    break;
+  case 'June':
+    mon = 'June';
+    days = 30;
+    break;
+  case 'July':
+    mon = 'July';
+    days = 31;
+    break;
+  case 'August':
+    mon = 'August';
+    days = 31;
+    break;
+  case 'September':
+    mon = 'September';
+    days = 30;
+    break;
+  case 'November':
+    mon = 'November';
+    days = 31;
+    break;
+  case 'December':
+    mon = 'December';
+    days = 30;
+    break;
+  default:
+    return 'Must provide valid month.'
+  }
+
+  return `${mon} has ${days} days.`
+}
+
+console.log(days('February', true));
+console.log(days('February', false));
+console.log(days('djsfjdslfs'));
