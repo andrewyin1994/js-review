@@ -96,9 +96,9 @@ console.log(days('February', false));
 console.log(days('djsfjdslfs'));
 
 
-function compare (choice1){
-  const choice2 = Math.floor(Math.random() * 3) +1;
-  if (choice1 < 1 || choice1 >3)
+function compare (choice1) {
+  const choice2 = Math.floor(Math.random() * 3) + 1;
+  if (choice1 < 1 || choice1 > 3)
     throw new Error ('invalid');
   if (choice1 ===choice2) { 
     return 'the result is a tie';
@@ -122,4 +122,3 @@ function compare (choice1){
     
 }
 console.log (compare(9));
-
