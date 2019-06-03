@@ -18,3 +18,18 @@ beyond(Infinity);
 beyond(1);
 beyond(-1);
 beyond(0);
+
+let sentence='craft block argon meter bells brown croon droop';
+
+
+function decode(encodedword){
+  if (encodedword[0]==='a') console.log(encodedword[1]);
+  else if (encodedword[0]==='b') console.log(encodedword[2]);
+  else if (encodedword[0]==='c') console.log(encodedword[3]); 
+  else if (encodedword[0]==='d') console.log(encodedword[4]);
+  else console.log(' ');
+}
+let words=sentence.split(' ');
+console.log (words);
+for (let i=0; i<words.length; i++)
+  decode (words[i]);
