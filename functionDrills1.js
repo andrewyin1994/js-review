@@ -1,5 +1,6 @@
 /* eslint-disable no-console */
-/* eslint-disable strict */
+'use strict';
+
 function getYearOfBirth(age) {
   if (age < 0) {
     throw new Error('Age can not be negative.');

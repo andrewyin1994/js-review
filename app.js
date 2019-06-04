@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-/* eslint-disable strict */
+'use strict';
 
 let myTeam = 'Mantong / Andrew';
 

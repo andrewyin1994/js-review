@@ -29,7 +29,7 @@ function decode(encodedword){
   else console.log(' ');
 }
 let words=sentence.split(' ');
-console.log (words);
+console.log(words);
 for (let i=0; i<words.length; i++) {
   decode (words[i]);
 }
